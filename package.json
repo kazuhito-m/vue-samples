@@ -4,9 +4,12 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "build": "node syncversion.js && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "test:unit": "vue-cli-service test:unit"
+    "start": "concurrently \"vue-cli-service serve\"  \"node src/mock/mock.js\"",
+    "test": "vue-cli-service test:unit --coverage",
+    "test:unit": "vue-cli-service test:unit --coverage",
+    "clean": "rimraf ./dist ./coverage ./reports",
   },
   "dependencies": {
     "vue": "^2.5.17",
