@@ -6,10 +6,10 @@
     "serve": "vue-cli-service serve",
     "build": "node syncversion.js && vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "start": "concurrently \"vue-cli-service serve\"  \"node src/mock/mock.js\"",
+    "start": "concurrently \"vue-cli-service serve\" ",
     "test": "vue-cli-service test:unit --coverage",
     "test:unit": "vue-cli-service test:unit --coverage",
-    "clean": "rimraf ./dist ./coverage ./reports",
+    "clean": "rimraf ./dist ./coverage ./reports"
   },
   "dependencies": {
     "vue": "^2.5.17",
