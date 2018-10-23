@@ -6,8 +6,12 @@
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import InputArea from '@/views/softwarekeyboard/InputArea.vue'
+import Keyboard from '@/views/softwarekeyboard/Keyboard.vue'
 
-@Component
+@Component({
+  InputArea,
+  Keyboard,
+})
 export default class Owner extends Vue {}
 </script>
