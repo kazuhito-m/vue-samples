@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    k
+    きーぼーど
   </div>
 </template>
 
