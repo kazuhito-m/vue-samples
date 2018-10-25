@@ -28,5 +28,5 @@ export default new Router({
       name: 'softwarekeyboard',
       component: Owner,
     },
-  ]
+  ],
 });
