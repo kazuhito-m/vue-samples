@@ -64,11 +64,11 @@ $grayBtn: #dee0e2;
 $pressedBtn: #bebebe;
 #softKeyboardArea {
   // margin-left: 0px;
-  width: 700px;
+  width: 400px;
   align: center;
 
   .baseKey {
-    height: 53px;
+    height: 26px;
     float: left;
     border: none;
     border-radius: 6px 6px 8px 8px;
@@ -89,41 +89,41 @@ $pressedBtn: #bebebe;
     margin: 4px;
   }
   .key {
-    width: 60px;
-    font-size: 36px;
+    width: 30px;
+    font-size: 9;
   }
   .moveKey {
-    width: 60px;
-    font-size: 36px;
+    width: 30px;
+    font-size: 8px;
 
     &:active {
       padding-top: 3px;
-      padding-left: 10px;
+      padding-left: 5px;
     }
   }
   .symbolKey {
-    width: 60px;
+    width: 30px;
 
-    font-size: 16px;
+    font-size: 8px;
   }
   .changeKey {
-    width: 60px;
-    font-size: 28px;
+    width: 30x;
+    font-size: 7px;
   }
   .spaceKey {
-    width: 196px;
+    width: 98px;
   }
   .deleteKey {
-    width: 94px;
-    font-size: 18px;
+    width: 47px;
+    font-size: 9px;
   }
 }
 
 .CaretBackArrow,
 .CaretNextArrow {
   display: inline-block;
-  width: 14px;
-  height: 14px;
+  width: 7px;
+  height: 7px;
   border-top: 4px solid #000;
   border-right: 4px solid #000;
 }
