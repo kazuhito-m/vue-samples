@@ -1,31 +1,9 @@
 # vue-samples
 
-## Project setup
-```
-npm install
-```
+## What's this ?
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Vue.js + TypeScript の「仕組みを検証」するためのサンプル群。
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## Author
 
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Run your unit tests
-```
-npm run test:unit
-```
+Kazuhito Miura ( [@kazuhito_m](https://twitter.com/kazuhito_m) on Twitter )
