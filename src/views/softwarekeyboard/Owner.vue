@@ -1,8 +1,12 @@
 <template>
   <div class="home">
     <h1>SoftwareKeyboard and Structure Sample</h1>
-    <InputArea/>
-    <Keyboard/>
+    <InputArea :inputKey="actieveText" ref="inputArea"/>
+    <Keyboard @input="keyPress"/>
+    <p>
+      <button @click="onClickGet">Get Value</button>
+    </p>
+
   </div>
 </template>
 
@@ -17,5 +21,19 @@ import Keyboard from '@/views/softwarekeyboard/components/Keyboard.vue';
     Keyboard,
   },
 })
-export default class Owner extends Vue {}
+export default class Owner extends Vue {
+  public actieveText: string = '';
+
+  // eveents.
+
+  public keyPress(key: string) {
+    this.actieveText = key;
+    setTimeout(() => this.actieveText = '', 1); // 非同期でクリアすることにより、このイベント後すぐにクリアする。
+  }
+
+  public onClickGet() {
+    const inputArea = this.$refs.inputArea as InputArea;
+    alert('onClickGet\ninput01:' + inputArea.textField01 + '\ninput02:' + inputArea.textField02);
+  }
+}
 </script>
